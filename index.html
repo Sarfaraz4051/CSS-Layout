@@ -38,11 +38,37 @@
       .grid-cols {
         grid-column: 2/3;
       }
+      .flex-block {
+        height: 400px;
+        border: 1px solid black;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .flex-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        border-bottom: 1px solid black;
+      }
+      .flex-items {
+        display: flex;
+        padding: 5px;
+      }
+      .flex-item {
+        border: 1px solid black;
+        margin: 5px;
+      }
     </style>
   </head>
   <body>
     <div class="grid-container">
-      <header class="grid-header">GRID LAYOUT HEADER<hr></header>
+      <header class="grid-header">
+        GRID LAYOUT HEADER
+        <hr />
+      </header>
       <div class="grid-item grid-rows">
         <b>What is Lorem Ipsum?</b><br />
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -67,7 +93,7 @@
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </div>
-      
+
       <div class="grid-item grid-cols">
         <b>What is Lorem Ipsum?</b><br />
         Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -80,7 +106,7 @@
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </div>
-      <div class="grid-item" style="grid-column: 3/4; grid-row: 2/4;">
+      <div class="grid-item" style="grid-column: 3/4; grid-row: 2/3">
         <b>What is Lorem Ipsum? 5 </b><br />
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -91,6 +117,52 @@
         of Letraset sheets containing Lorem Ipsum passages, and more recently
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
+      </div>
+    </div>
+
+    <div class="flex-block">
+      <div class="flex-container">
+        <div class="flex-header">Flex Box</div>
+        <div class="flex-items">
+          <div class="flex-item">
+            What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown
+            printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unchanged.
+            It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum.
+          </div>
+          <div class="flex-item">
+            Why do we use it? It is a long established fact that a reader will
+            be distracted by the readable content of a page when looking at its
+            layout. The point of using Lorem Ipsum is that it has a more-or-less
+            normal distribution of letters, as opposed to using 'Content here,
+            content here', making it look like readable English. Many desktop
+            publishing packages and web page editors now use Lorem Ipsum as
+            their default model text, and a search for 'lorem ipsum' will
+            uncover many web sites still in their infancy. Various versions have
+            evolved over the years, sometimes by accident, sometimes on purpose
+            (injected humour and the like).
+          </div>
+          <div class="flex-item">
+            Where can I get some? There are many variations of passages of Lorem
+            Ipsum available, but the majority have suffered alteration in some
+            form, by injected humour, or randomised words which don't look even
+            slightly believable. If you are going to use a passage of Lorem
+            Ipsum, you need to be sure there isn't anything embarrassing hidden
+            in the middle of text. All the Lorem Ipsum generators on the
+            Internet tend to repeat predefined chunks as necessary, making this
+            the first true generator on the Internet. It uses a dictionary of
+            over 200 Latin words, combined with a handful of model sentence
+            structures, to generate Lorem Ipsum which looks reasonable. The
+            generated Lorem Ipsum is therefore always free from repetition,
+            injected humour, or non-characteristic words etc.
+          </div>
+        </div>
       </div>
     </div>
   </body>
