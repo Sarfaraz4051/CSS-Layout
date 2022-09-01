@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAM CSS Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .grid-container {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        border: 5px solid white;
+        height: 400px;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .grid-header {
+        grid-column: 1 / 4;
+        place-self: center;
+      }
+      .grid-item {
+        border: 1px solid white;
+      }
+
+      .grid-rows {
+        grid-row: 2 / 4;
+      }
+      .grid-cols {
+        grid-column: 2/3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="grid-header">GRID LAYOUT HEADER<hr></header>
+      <div class="grid-item grid-rows">
+        <b>What is Lorem Ipsum?</b><br />
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </div>
+      <div class="grid-item grid-cols">
+        <b>What is Lorem Ipsum?</b><br />
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </div>
+      
+      <div class="grid-item grid-cols">
+        <b>What is Lorem Ipsum?</b><br />
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </div>
+      <div class="grid-item" style="grid-column: 3/4; grid-row: 2/4;">
+        <b>What is Lorem Ipsum? 5 </b><br />
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </div>
+    </div>
+  </body>
+</html>
